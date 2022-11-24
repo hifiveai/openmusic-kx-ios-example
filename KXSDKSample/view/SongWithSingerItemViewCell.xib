@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SongWithSingerItemViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="SongWithSingerItemViewCell" id="KGk-i7-Jjw" customClass="SongWithSingerItemViewCell" customModule="KXSDKSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Se8-hb-Hma" userLabel="songImgView">
+                        <rect key="frame" x="21" y="13" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="KXH-08-d9T"/>
+                            <constraint firstAttribute="height" constant="68" id="L3q-Jw-eob"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCJ-Aq-Gar">
+                        <rect key="frame" x="101" y="17" width="128" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="zLE-CU-Bol"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CF-eo-6fc">
+                        <rect key="frame" x="101" y="39" width="133" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(无评分)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouz-GJ-iXm">
+                        <rect key="frame" x="101" y="57.5" width="138" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="NFp-gt-qKR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gO-vL-FjP" userLabel="btnBgView">
+                        <rect key="frame" x="239" y="14" width="60" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="GAW-ho-CuT"/>
+                            <constraint firstAttribute="height" constant="28" id="YpB-J2-tNu"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igd-D6-iWg" userLabel="delBtnView">
+                        <rect key="frame" x="239" y="54" width="60" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="0c3-M8-1nN"/>
+                            <constraint firstAttribute="width" constant="60" id="6aJ-AB-lzc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WCJ-Aq-Gar" firstAttribute="top" secondItem="Se8-hb-Hma" secondAttribute="top" constant="4" id="6wS-bh-Frt"/>
+                    <constraint firstItem="Igd-D6-iWg" firstAttribute="leading" secondItem="9gO-vL-FjP" secondAttribute="leading" id="DrA-Yk-bFf"/>
+                    <constraint firstItem="9gO-vL-FjP" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-21" id="EmZ-Or-SJF"/>
+                    <constraint firstItem="0CF-eo-6fc" firstAttribute="top" secondItem="WCJ-Aq-Gar" secondAttribute="bottom" constant="4" id="LPN-8d-nSE"/>
+                    <constraint firstItem="WCJ-Aq-Gar" firstAttribute="trailing" secondItem="9gO-vL-FjP" secondAttribute="leading" constant="-10" id="UoS-16-svj"/>
+                    <constraint firstItem="9gO-vL-FjP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="WOQ-Pw-uG6"/>
+                    <constraint firstItem="0CF-eo-6fc" firstAttribute="trailing" secondItem="9gO-vL-FjP" secondAttribute="leading" constant="-5" id="c5j-Ed-7EG"/>
+                    <constraint firstItem="0CF-eo-6fc" firstAttribute="leading" secondItem="WCJ-Aq-Gar" secondAttribute="leading" id="cjH-wm-jCL"/>
+                    <constraint firstItem="ouz-GJ-iXm" firstAttribute="trailing" secondItem="9gO-vL-FjP" secondAttribute="leading" id="gIf-6G-1ww"/>
+                    <constraint firstItem="ouz-GJ-iXm" firstAttribute="top" secondItem="0CF-eo-6fc" secondAttribute="bottom" constant="4" id="gWk-Vl-ig5"/>
+                    <constraint firstItem="Igd-D6-iWg" firstAttribute="top" secondItem="9gO-vL-FjP" secondAttribute="bottom" constant="12" id="kdB-3K-jez"/>
+                    <constraint firstItem="WCJ-Aq-Gar" firstAttribute="leading" secondItem="Se8-hb-Hma" secondAttribute="trailing" constant="12" id="kyU-t1-QqO"/>
+                    <constraint firstItem="Se8-hb-Hma" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="lEm-dp-piu"/>
+                    <constraint firstItem="ouz-GJ-iXm" firstAttribute="leading" secondItem="WCJ-Aq-Gar" secondAttribute="leading" id="tTM-qR-X1J"/>
+                    <constraint firstItem="Se8-hb-Hma" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wLm-fd-lx7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnBgView" destination="9gO-vL-FjP" id="HIc-ap-5JN"/>
+                <outlet property="btnTop" destination="WOQ-Pw-uG6" id="85a-3b-92T"/>
+                <outlet property="delBtnView" destination="Igd-D6-iWg" id="4xc-iI-kph"/>
+                <outlet property="singerLabel" destination="0CF-eo-6fc" id="BJs-1I-viX"/>
+                <outlet property="songImageView" destination="Se8-hb-Hma" id="imz-g6-PXw"/>
+                <outlet property="songNameLabel" destination="WCJ-Aq-Gar" id="Ay8-dH-etv"/>
+                <outlet property="typeLabel" destination="ouz-GJ-iXm" id="ACu-uv-ycf"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="70"/>
+        </tableViewCell>
+    </objects>
+</document>

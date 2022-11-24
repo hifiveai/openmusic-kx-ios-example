@@ -1,0 +1,6 @@
+framework module KXKTVSDK {
+  umbrella header "KXKTVSDK.h"
+
+  export *
+  module * { export * }
+}
